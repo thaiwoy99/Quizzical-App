@@ -1,0 +1,183 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+  
+}
+
+/* Typography */
+h1,h3 ,p{
+  margin: 0;
+  padding: 0;
+}
+.home h1{
+  
+font-size: 2rem;
+font-weight: 700;
+color: #293264;
+font-family: karla;
+margin-bottom: 1rem;
+
+  
+  
+}
+.home p{
+font-family: Inter;
+font-size: 1.5rem;
+font-weight: 400;
+color: #293264;
+margin-bottom: 2rem;
+}
+.home button{
+color: #F5F7FB;
+background: #4D5B9E;
+padding:1rem 3rem;
+font-size: 1.2rem;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+
+
+
+
+}
+
+
+/*Lyouts*/
+.home{
+  background: #F5F7FB;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+}
+.home ::before{
+  content: "";
+  background: #FFFAD1;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top:0;
+  right: 0;
+  border-bottom-left-radius: 80%;
+  
+
+
+}
+.home ::after{
+  content: "";
+  background: #DEEBF8;
+
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  border-top-right-radius: 80%;
+  
+
+
+}
+.ans-check{
+  background: #4D5B9E;
+padding: 20px;
+cursor: pointer;
+font-size: 1.2rem;
+border-radius: 5px;
+color: white;
+border: none;
+}
+/* Question Page */
+.container{
+  
+
+  height:100vh;
+}
+.que-cont{
+
+  height: auto;
+  
+   
+  padding: 2rem 1rem;
+  font-size:1rem ;
+  
+  align-items: center;
+}
+.que-cont p{
+  font-size:1.2rem ;
+  border :1px solid  #4D5B9E;
+  ;
+  
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  min-width: 10rem;
+  text-align: center;
+  color: #293264;
+
+}
+.que-cont h3{
+margin-bottom: 1rem;
+color: #293264;
+
+
+}
+.submit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.submit p{
+  border: none;
+  font-size: 1.5rem;
+  align-self:center;
+}
+
+@media all and (min-width:700px){
+
+  .answers{
+    display: flex;
+  }
+  .que-cont{
+    box-sizing: border-box;
+height: 100%;
+    
+    padding: 2rem 1rem;
+    font-size:1rem ;
+    
+    
+    
+    
+    
+  }
+  .que-cont p{
+    margin-right: 1rem;
+  }
+  .que{
+    margin-bottom: 2rem;
+  
+  }
+  .que-cont h3{
+    margin-bottom: 1.5rem;
+    
+    }
+    .cont{
+      
+      width: 70%;
+      
+      margin: auto;
+
+    }
+    .submit{
+      
+      flex-direction: row;
+    }
+    
+
+}
